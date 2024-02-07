@@ -1,0 +1,202 @@
+@import url('https://fonts.cdnfonts.com/css/gg-sans-2');
+
+body{
+    font-family: 'gg sans', sans-serif;
+    background-color: #eee;
+}
+
+.container{
+    max-width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+/* NAV_BAR CONTENT */
+
+.nav_bar{
+    display: flex;
+    height: 80px;
+    background-color: red;
+    padding:0 40px;
+    
+}
+
+.lnk_container{
+    width: 60%;
+    height: 100%;
+    display: flex;
+}
+
+.lnk_container a{
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lnk_container a:hover{
+    background-color: darkred;
+    transition: 0.3s;
+}
+
+.user_container{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.username_container{
+    color: white;
+}
+
+.user_image_container{
+    margin: 0 20px;
+}
+
+.profile_image {
+    width: 60px; 
+    height: 60px;
+    border-radius: 100%;
+}
+
+/* NAV_BAR CONTENT */
+
+.form_container{
+    background-color: #fff;
+    padding:    20px;
+}
+
+.form_container form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    border-radius: 5px;
+    border: none;
+    height: 40px;
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: #eee;
+    padding: 0 20px;
+}
+
+textarea{
+    border-radius: 5px;
+    border: none;
+    height: 90px;
+    width: 80%;
+    margin-bottom: 20px;
+    background-color: #eee;
+    padding: 10px 20px;
+}
+
+input, textarea{
+    outline: none;
+    resize: none;
+}
+
+.form_d1{
+    display: flex;
+    padding: 0px 20px;
+}
+
+.form_d2{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.form_d3{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.form_d4{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+.form_d5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12%;
+}
+
+button{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    width: 80px;
+    padding: 10px 20px;
+}
+
+button:hover{
+    background-color: darkred;
+    transition: 0.3s;
+}
+
+#logout_btn_form{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#logout_btn_form:hover{
+    background-color: darkred;
+    transition: 0.3;
+}
+
+#logout{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: "gg sans";
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#logout:hover{
+    background-color: darkred;
+    transition: 0.3;
+}
+
+@media (max-width: 768px) {
+    .lnk_container {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .user_container {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .user_image_container {
+        margin: 0;
+    }
+
+    .form_d1 {
+        flex-direction: column;
+    }
+
+    .form_d5 {
+        margin-left: 0;
+    }
+}

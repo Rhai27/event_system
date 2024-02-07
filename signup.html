@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/signup.js"></script>
+    <title>Sign Up</title>
+</head>
+<body>
+
+    <img src="images/15.jpg" alt="Background Photo" class="background-photo">
+    <div class="container">
+        <div class="form_container">
+            <form action="includes/signup_process.php" method="post" enctype="multipart/form-data" id="user_form">
+                
+                <h1>Sign Up Form</h1>
+
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                
+               
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            
+                
+                <input type="text" id="password" name="password" placeholder="Password" required>
+
+                
+                <input type="file" id="image" name="image" accept="image/*" required>
+
+                <input type="hidden" id="role" name="role" value="low">
+                
+                <div class="btn_container">
+                    <input type="submit" value="Sign Up" id="btn">
+                </div>
+            </form>
+
+            <div class="form_footer">
+                <a href="index.html">Already have an Account?</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

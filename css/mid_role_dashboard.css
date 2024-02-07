@@ -1,0 +1,162 @@
+@import url('https://fonts.cdnfonts.com/css/gg-sans-2');
+
+body{
+    font-family: 'gg sans', sans-serif;
+    background-color: #eee;
+}
+
+.container{
+    max-width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+/* NAV_BAR CONTENT */
+
+.nav_bar{
+    display: flex;
+    height: 80px;
+    background-color: red;
+    padding:0 40px;
+   
+}
+
+.lnk_container{
+    width: 60%;
+    height: 100%;
+    display: flex;
+}
+
+.lnk_container a{
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.lnk_container a:hover{
+    background-color: darkred;
+    transition: 0.3s;
+}
+
+.user_container{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+}
+
+.username_container{
+    color: white;
+}
+
+.user_image_container{
+    margin: 0 20px;
+}
+
+.profile_image {
+    width: 60px; 
+    height: 60px;
+    border-radius: 100%;
+}
+
+/* NAV_BAR CONTENT */
+
+#container1 {
+    background-color: white;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: none;
+    height: 50px;
+    width: 20%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: white;
+}
+
+th {
+    background-color: gray;
+    color: white;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.edit-button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#logout_btn_form{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+
+#logout_btn_form:hover{
+    background-color: darkred;
+    transition: 0.3;
+}
+
+#logout{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: "gg sans";
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#logout:hover{
+    background-color: darkred;
+    transition: 0.3;
+}
+
+@media (max-width: 768px) {
+    .lnk_container {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .user_container {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .user_image_container {
+        margin: 0;
+    }
+}

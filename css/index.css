@@ -1,0 +1,190 @@
+/* Add this to your existing CSS */
+
+/* Global styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden; /* Prevent scrolling */
+}
+/* Add this to your existing CSS */
+
+
+.main-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: imageSlide 40s linear infinite; /* Adjust the duration as needed */
+}
+
+@keyframes imageSlide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+/* Login form container */
+.main-container {
+    display: flex ;
+    max-width: 100%; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    background: linear-gradient(to right, #df7070, #ba0202);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+/* Image container for slideshow */
+.image-container {
+    max-height: 10%; /* Adjust the height as needed */
+    overflow-y: auto;
+    display: flex; /* Display images side by side */
+    justify-content: space-between; /* Add space between images */
+    align-items: center; /* Center images vertically */
+    padding: 40px; /* Add padding for space */
+}
+
+/* Image styling */
+.welcome-image {
+    width: 100%; /* Set the width to 100% of the container */
+    height: 400px; /* Set the desired height */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+    border-radius: 10px; /* Optional: Add border radius for a rounded look */
+}
+
+/* Login form container styling */
+.form-container {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Label styling */
+label {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* Input field styling */
+input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: background-color 0.3s;
+}
+
+/* Input focus styling */
+input:focus {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.5);
+}
+
+/* Submit button styling */
+input[type="submit"] {
+    background-color: #ffffff;
+    color: #ff4d4d;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Submit button hover effect */
+input[type="submit"]:hover {
+    background-color: #ff4d4d;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+/* Button container styling */
+.btn_container {
+    text-align: center;
+}
+
+/* Form footer styling */
+.form_footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Anchor tag styling */
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Image slideshow animation */
+@keyframes imageSlide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-220%);
+    }
+}
+
+/* Image slideshow container styling */
+.image-container {
+    max-height: 400px; /* Adjust the height as needed */
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+/* Image slideshow animation for larger duration */
+.image-container img {
+    width: 200%; /* Double the width to accommodate two images side by side */
+    animation: imageSlide 40s linear infinite; /* Adjust the duration as needed */
+}
+
+/* Image title styling for slideshow */
+.image-title {
+    position: absolute;
+    top: 20px; /* Adjust the top distance as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff; /* Text color */
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold;
+    z-index: 2; /* Ensure the title is above the images */
+}
+@media (max-width: 768px) {
+    .image-container {
+        width: 300%; /* Adjust the width for smaller screens */
+        animation: imageSlide 20s linear infinite; /* Adjust the duration for smaller screens */
+    }
+
+    .image-container img {
+        width: 33.333%; /* Adjust the width for smaller screens */
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+}

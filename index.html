@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Log In</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="image-container">
+            <img src="images/2st_images.jpg" alt="Welcome Image" class="welcome-image">
+            <img src="images/1st_images.jpg" alt="Welcome Image" class="welcome-image">
+            <img src="images/3rd.jpg" alt="Welcome Image" class="welcome-image">
+            <img src="images/4th.jpg" alt="Welcome Image" class="welcome-image">
+            <img src="images/5th.jpg" alt="Welcome Image" class="welcome-image">
+            <img src="images/6th.jpg" alt="Welcome Image" class="welcome-image">
+            <img src="images/7th.jpg" alt="Welcome Image" class="welcome-image">
+            <img src="images/8th.jpg" alt="Welcome Image" class="welcome-image">
+            <img src="images/9th.jpg" alt="Welcome Image" class="welcome-image">
+            <img src="images/10th.jpg" alt="Welcome Image" class="welcome-image">
+        </div>
+        <div class="form-container">
+            <form action="includes/login_process.php" method="post" id="user_form">
+                <label for="form">Welcome Back!</label>
+
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+
+                <div class="btn_container">
+                    <input type="submit" value="Log In" id="btn">
+                </div>
+            </form>
+
+            <div class="form_footer">
+                <a href="signup.html">Need an Account?</a>
+            </div>
+        </div>
+    </div>
+    <script src="js/trans.js" defer></script> 
+</body>
+</html>
